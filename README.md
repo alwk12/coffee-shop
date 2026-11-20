@@ -1,16 +1,30 @@
-# React + Vite
+# Coffee R Us
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React single page app for a coffee store with a shop page and an admin portal.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Home page with store info
+- Shop page with search and origin filter
+- Admin portal to add, edit the price of, and delete coffee
+- Data is saved in a fake backend (json-server)
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repo and open the folder
+2. Run `npm install`
+3. Start the fake backend in one terminal: `npm run server`
+4. Start the app in another terminal: `npm run dev`
+5. Open the link Vite shows (usually http://localhost:5173)
 
-## Expanding the ESLint configuration
+## Run the tests
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+npm test
+```
+
+## Known limitations
+
+- There is no login for the admin portal
+- Only the price can be edited, not the other fields
+- The backend must be running for the app to load data
